@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>LM3 - Exercicio 08 Javascript - Parte 6</title>
+    <style>
+        #peekaboo {
+            visibility: hidden;
+        }
+
+        #boo {
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <div class="card border-primary">
+
+        <div class="card-header deep-orange lighten-1 white-text"> Exercicio 08 Javascript</div>
+
+        <div class="card-body">
+            <h1 class="card-title">Parte 6</h1>
+            <p class="card-text">Eventos continuação</p>
+
+            <div id='content'>
+
+                <div class="card mt-2 mb-2">
+                    <div class="card-header">Alínea 6.1 a 6.4</div>
+					<div class="card-body"><button id="consola" class="btn btn-primary">Consola</button>
+
+						<button id="escreve" class="btn btn-primary">Escreve</button>
+
+						<button id="apaga" class="btn btn-danger"><i class="fa fa-pencil"></i> Apaga</button>
+
+						<p id="textop" class="mt-2 mb-2"></p>
+
+					</div>
+                </div>
+                <div class="card mt-2 mb-2">
+                    <div class="card-header">Alínea 6.5</div>
+                    <div class="card-body"><input class="text-center n form-control mb-2 mr-sm-2" name="c1" type="text" id="c1"
+                                                  value="textoacopiar" size="10">
+
+                        <button id="copia" class="btn btn-primary">Copia</button>
+                    </div>
+                </div>
+
+                <div class="card mt-2 mb-2">
+                    <div class="card-header">Alínea 6.6 a 6.8</div>
+                    <div class="card-body">
+                        <input class="text-center n" name="c2" type="text" id="c2" placeholder="preenche-me" size="10" >
+
+                        <button id="copia2" class="btn btn-primary">Copia &DoubleLongRightArrow;</button>
+                        <button id="copia3" class="btn btn-primary"> &DoubleLongLeftArrow; Copia</button>
+
+                        <input class="text-center n" name="c3" type="text" id="c3" placeholder="preenche-me" size="10">
+                    </div>
+                </div>
+                <div class="card mt-2 mb-2">
+                    <div class="card-header">Alínea 6.9</div>
+                    <div class="card-body">
+                        <img src="imgs/d12402.jpg" id="boo">
+                        <img src="imgs/peek_a_boo_by_chibivillecute.gif" id="peekaboo">
+                    </div>
+                </div>
+                <div class="card mt-2 mb-2">
+                    <div class="card-header">Alínea 6.10</div>
+                    <div class="card-body">
+                        <input class="text-center n form-control mb-2" name="c4" type="text" id="c4" placeholder="preenche-me" size="10">
+                        <span class="text-center n" id="c5"></span>
+                    </div>
+                </div>
+                <div class="card mt-2 mb-2">
+                    <div class="card-header">Alínea 6.11</div>
+                    <div class="card-body">
+                        <textarea rows="5" class="text-center n form-control form-control-lg mb-2" name="c6" id="c6" placeholder="preenche-me"></textarea>
+                        <span class="text-center n float-sm-right badge badge-secondary" id="c7">500</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="card-footer text-muted success-color white-text">
+            <p class="mb-0">NTC | Laboratório MM 3 | Pedro Beça | David Oliveira | Nuno Ribeiro</p>
+        </div>
+    </div>
+
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+<script src="js/parte6.js"></script>
+</body>
+</html>
