@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>LM3 - Exercicio 10 Javascript - Cálculo de Expressões</title>
+    <meta name="description" content="">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilo.css">
+
+    <!-- Javascripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/ex10_3.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <div class="card border-primary">
+        <div class="card-header deep-orange lighten-1 white-text">Cálculo de Expressões</div>
+
+        <div class="card-body">
+            <h1 class="card-title text-center">Determina o resultado da expressão!</h1>
+
+            <div id="entrada" class="text-center">
+                <div class="row">
+                    <div class="text-center col-6" id="certas">Respostas certas: 0</div>
+                    <div class="text-center col-6" id="erradas">Respostas erradas: 0</div>
+                </div>
+                <input id="btn_jogar" class="p-2 m-2" name="btn_jogar" type="button" value="Jogar" align="middle"/>
+            </div>
+
+            <div id="jogo" style="display: none" class="text-center">
+                <div id="expressao">
+                    <input class="text-center n" name="n1" type="text" id="n1" size="2" readonly/>
+                    <input class="text-center n" name="op1" type="text" id="op1" size="2" readonly/>
+                    <input class="text-center n" name="n2" type="text" id="n2" size="2" readonly/>
+                    <input class="text-center n" name="op2" type="text" id="op2" size="2" readonly/>
+                    <input class="text-center n" name="n3" type="text" id="n3" size="2" readonly/>
+                    <span class="igual"> = </span>
+                    <input class="text-center" name="resultado" type="text" id="resultado" size="2"
+                           placeholder="?"/><br/>
+                </div>
+
+                <input id="btn_verificar" class="p-2 m-2" name="btn_verificar" type="button" value="Verificar"/>
+            </div>
+
+            <p>
+                O gerador automático deve gerar expressões aritméticas com dois
+                operadores, de entre os operadores de soma e subtração, e dois operandos, por exemplo 3-10+2 ou
+                5+3-1.<br/>
+                As operações só podem ser realizadas com números inteiros entre 0 e 9.
+                <br/><br/>
+                Neste gerador o utilizador tem de clicar no botão Jogar, introduzir a resposta que entender à
+                expressão gerada e clicar no botão Verificar. Como resposta saberá se a sua resposta está correcta ou
+                errada.
+                <br/><br/>
+                O Utilizador, no início de cada jogo (após cada jogada), sabe o número de respostas certas e número
+                de respostas erradas que deu até ao momento (perde-se com o refresh da página).
+
+            </p>
+
+
+        </div>
+
+        <div class="card-footer text-muted success-color white-text">
+            <p class="mb-0">NTC | Laboratório MM 3 | Pedro Beça | David Oliveira | Nuno Ribeiro</p>
+        </div>
+
+
+    </div>
+</div>
+
+<button id="btn_modal" type="button" class="btn btn-outline-warning d-none" data-toggle="modal" data-target="#myModal">
+    Surpresa
+</button>
+<!-- The Modal -->
+<div class="modal" id="myModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h4 id="modal-title" class="modal-title">
+                    <!-- o conteúdo desta janela modal será alterado dinamicamente com JS --></h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <div id="modal-body" class="modal-body">
+                <!-- o conteúdo desta janela modal será alterado dinamicamente com JS -->
+            </div>
+
+            <img id="modal-feedback-pic" class="img-fluid" src=""/>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+    font-family: sans-serif;
+    background-color: #C1A35A;
+    margin: 0;
+    padding: 0;
+
+}
+
+#div_inicio {
+    margin: 0;
+    padding-top: 100px;
+    position: fixed;
+    top: 0;
+    z-index: -1;
+    height: 100%;
+    text-align: center;
+    font-size: 30px;
+    color: #FFF;
+    /* Required for IE 5, 6, 7 */
+    /* ...or something to trigger hasLayout, like zoom: 1; */
+    width: 100%;
+    text-align: center;
+}
+
+input {
+    font-size: 30px;
+    color: #5B473C;
+}
+
+h3 {
+    color: #5B473C;
+    font-size: 35px;
+    text-align: center;
+}
+
+#certas, #erradas {
+    font-size: 20px;
+    border-radius: 3px;
+    padding: 5px;
+    width: 300px;
+    margin: 5px auto;
+    color: #5B473C;
+}
+
+#certas {
+    background-color: #EBE494;
+}
+
+#erradas {
+    background-color: #E0B5AC;
+}
+
+#expressao {
+    font-size: 30px;
+    padding: 5px;
+    background-color: #AB9E50;
+    width: 100%;
+    margin: 5px auto;
+    color: #5B473C;
+}
