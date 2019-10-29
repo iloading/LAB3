@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>
+        Exercício 10
+    </title>
+
+    <link rel="stylesheet" type="text/css" href="./css/estilo.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+
+    <!-- Javascripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+
+<div class="container">
+
+    <div id="inicio" class="overlay">
+        <div class="container">
+            <div class="overlay-content">
+                <div class="alert alert-dark" role="alert">
+                    <h4 class="alert-heading">Quem és tu, estranho?</h4>
+                    <hr>
+                    <div class="row mb-0 h-100 justify-content-center align-items-center">
+                        <div class="col-4">
+                            <input id="nome" type="text" class="form-control mt-1 mb-3" name="nome" autofocus>
+                            <span class="text-danger" id="mensagem_erro"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card border-primary">
+        <div class="card-header deep-orange lighten-1 white-text">Advinha o número</div>
+
+        <div class="card-body text-center">
+            <h1 class="card-title">Entre 1 e 100... Aposta!</h1>
+            <p>OK <span id="nome-apresenta"></span>, em apenas 5 tentativas achas que consegues adivinhar o número
+                sorteado?</p>
+
+            <div class="form-horizontal text-center">
+                <div class="form-group">
+
+                    <label for="numero" class="col-4 control-label">Número</label>
+
+                    <input id="numero" type="text" class="form-control mb-5" name="numero">
+
+                    <span id="msg" class="help-block">
+                        <h4 class="text-danger" id="msgtitulo"> </h4>
+                        <p id="msgresultado"> </p>
+                        <video id="victory" width="320" height="240" style="display:none">
+                          <source src="media/victory.mp4">
+                        </video>
+                    </span>
+
+
+                </div>
+
+                <div class="form-group mt-5">
+                    <div class="col-12">
+                        <button class="btn btn-lg btn-success btn-lg btn-block" id="apostar">
+                            Apostar
+                        </button>
+
+                        <span id="tentativas" class="btn btn-info mt-5">
+                            Tentativas restantes <span id="tentativas-numero" class="badge badge-light">0</span>
+                        </span>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="card-footer text-muted success-color white-text">
+            <p class="mb-0">2019 | NTC | Laboratório MM 3 | Pedro Beça | David Oliveira | Nuno Ribeiro</p>
+        </div>
+
+
+    </div>
+</div>
+
+<button id="btn_modal" type="button" class="btn btn-outline-warning d-none" data-toggle="modal" data-target="#myModal">
+    Surpresa
+</button>
+<!-- The Modal -->
+<div class="modal" id="myModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h4 id="modal-title" class="modal-title">
+                    <!-- o conteúdo desta janela modal será alterado dinamicamente com JS --></h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <div id="modal-body" class="modal-body">
+                <!-- o conteúdo desta janela modal será alterado dinamicamente com JS -->
+            </div>
+
+            <img id="modal-feedback-pic" class="img-fluid" src=""/>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="ex11.js"></script>
+</body>
+</html>
