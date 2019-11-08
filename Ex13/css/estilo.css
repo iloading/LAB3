@@ -1,0 +1,64 @@
+#div_inicio h3 {
+    font-size: 30px;
+    font-family: 'Asset', cursive;
+}
+
+#conteudo {
+    width: 50%;
+    height: 300px;
+    margin: auto;
+}
+
+#conteudo > div {
+    height: inherit;
+    width: 100%;
+    float: left;
+}
+.card-body
+{
+    background-color: #eee;
+}
+
+#area_jogo button {
+    width: 100px;
+    height: 50px;
+    border-radius: 20%;
+}
+
+#area_resultados {
+    background-color: wheat;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+#area_resultados > div {
+    position: absolute;
+    bottom: 0;
+    width: 25%;
+}
+
+#area_resultados div:nth-of-type(1) {
+    left: 0%;
+}
+
+#area_resultados div:nth-of-type(2) {
+    left: 25%;
+}
+
+#area_resultados div:nth-of-type(3) {
+    left: 50%;
+}
+
+#area_resultados div:nth-of-type(4) {
+    left: 75%;
+}
+
+#area_resultados div img {
+    float: left;
+    width: 100%;
+}
+
+#area_resultados div:nth-of-type(1) div, #area_resultados div:nth-of-type(2) div, #area_resultados div:nth-of-type(3) div, #area_resultados div:nth-of-type(4) div {
+    cursor: pointer;
+}
