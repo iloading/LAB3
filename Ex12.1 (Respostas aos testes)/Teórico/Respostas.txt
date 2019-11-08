@@ -7,7 +7,7 @@ Tenham em consideração que isto são apenas as minhas respostas ao teste. Pode
 5-d
 6-d
 7-a
-8-b ou d - não tenho a certeza (Perguntar ao stor na aula)
+8-a o vdd e falso estão trocados no enunciado
 9-c
 10-d
 11-b
