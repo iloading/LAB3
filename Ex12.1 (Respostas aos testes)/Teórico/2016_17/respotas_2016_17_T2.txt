@@ -1,0 +1,16 @@
+1-a
+2-d porque o fluxograma está mal feito
+3-c
+4-d myFunction();
+5-ciclos não sai
+6-não sai
+7-c ou d (provavelmente c)
+8-(não demos)
+9-(não demos) mas d) seria valor válido, impar
+10- (não demos)
+11- (não demos) b)
+12- (não demos)
+13- (não demos)
+14 -(não demos)
+15 -(não demos)
+16 -(não demos)
