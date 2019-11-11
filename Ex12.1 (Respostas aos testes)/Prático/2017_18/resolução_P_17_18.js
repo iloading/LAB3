@@ -67,7 +67,7 @@ document.getElementById('calcular').onclick = function() {
 /*
   O utilizador insere um número para apostar
   Ao clicar uma vez no botão 'aposta', o jogador perde logo 10 créditos, e é iniciada a função temporizador.
-  Esta função é invocada 5x pelo que, no total, gera 5 números por click do botão aposta. Caso algum dos 5 números gerados seja igual ao número que o utilizador inseriu, este ganha 50 pontos (um saldo de 40 visto que perdeu 10 ao apostar)
+  Esta função é invocada 10x pelo que, no total, gera 5 números por click do botão aposta. Caso algum dos 5 números gerados seja igual ao número que o utilizador inseriu, este ganha 50 pontos (um saldo de 40 visto que perdeu 10 ao apostar)
 */
 
 //2
