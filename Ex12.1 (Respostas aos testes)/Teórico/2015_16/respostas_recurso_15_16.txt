@@ -1,0 +1,17 @@
+1-b
+2-d
+3-d
+4-b
+5-a
+6- (não demos)
+7-d
+8-c
+9-a
+10-d (3000)
+11-(não demos)
+12-(não demos) seria d)
+13-(não demos)
+14-d
+15-o id está mal escrito ou o js é chamado no head sem window.onload 
+16-não demos
+17- switch case
