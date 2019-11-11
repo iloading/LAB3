@@ -1,0 +1,18 @@
+1-c
+2-b
+3-c
+4-(não demos)
+5-b se 5!=4 então 5===4 é falso
+6-a
+7-c
+8-d (3000)
+9-d de -50 a -29
+10-c
+11-não demos
+12-não demos
+13-não demos
+14-não demos
+15-JS fluxograma e pseudocódigo
+16-não demos
+17- não demos
+18- não demos
