@@ -1,0 +1,137 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+#div_inicio {
+    display: block;
+    background-color: #666666;
+    margin: 0;
+    padding-top: 200px;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    height: 100%;
+    text-align: center;
+    font-size: 30px;
+    color: #FFF;
+
+    font-family: 'arial', cursive;
+    font-weight: 400;
+
+    /* Required for IE 5, 6, 7 */
+    /* ...or something to trigger hasLayout, like zoom: 1; */
+    width: 100%;
+
+    /* http://css-tricks.com/64-css-transparency-settings-for-all-broswers/ */
+    /* Theoretically for IE 8 & 9 (more valid) */
+    /* ...but not required as filter works too */
+    /* should come BEFORE filter */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=95)";
+
+    /* This works in IE 8 & 9 too */
+    /* ... but also 5, 6, 7 */
+    filter: alpha(opacity=95);
+
+    /* Older than Firefox 0.9 */
+    -moz-opacity: 0.95;
+
+    /* Safari 1.x (pre WebKit!) */
+    -khtml-opacity: 0.95;
+    /* Modern!
+                /* Firefox 0.9+, Safari 2?, Chrome any?
+                /* Opera 9+, IE 9+ */
+    opacity: 0.95;
+}
+
+#atleta1inicio, #atleta2inicio, #atleta3inicio {
+ 
+    cursor: pointer;
+}
+
+.div_nivel {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.div_nivel a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+#bancada {
+    background-image: url("../imagens/bancada.jpg");
+    background-repeat: no-repeat;
+    width: 600px;
+    height: 250px;
+}
+
+#pista {
+    width: 600px;
+    height: 350px;
+    background-image: url("../imagens/pista.png");
+    background-repeat: repeat-x;
+}
+
+#start {
+    margin-left: 550px;
+}
+
+#start:hover {
+    cursor: pointer;
+}
+
+#meta {
+    position: absolute;
+    top: 280px;
+    left: 550px;
+}
+
+#atleta1 {
+    position: absolute;
+    top: 280px;
+    left: 20px;
+    z-index: 1;
+}
+
+#atleta2 {
+    position: absolute;
+    top: 427px;
+    left: 20px;
+    z-index: 1;
+}
+
+#atleta3 {
+    position: absolute;
+    top: 525px;
+    left: 20px;
+    z-index: 1;
+}
+
+#atleta1Vitorias, #atleta2Vitorias, #atleta3Vitorias {
+    padding-left: 5px;
+    width: 15px;
+    border: 0;
+    text-align: right;
+    background-color: #B93A45;
+    font-size: 10px;
+    color: #fff;
+}
+
+#atleta1Vitorias {
+    position: absolute;
+    top: 325px;
+    left: 580px;
+}
+
+#atleta2Vitorias {
+    position: absolute;
+    top: 425px;
+    left: 580px;
+}
+
+#atleta3Vitorias {
+    position: absolute;
+    top: 525px;
+    left: 580px;
+}
