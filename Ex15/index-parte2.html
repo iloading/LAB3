@@ -1,0 +1,140 @@
+<html>
+<head>
+    <title>Otimização de código: As funções</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="css/main.css" rel="stylesheet" type="text/css"/>
+
+    <script src="js/script_parte2.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="page-header img img-rounded">
+        <h1>Funções</h1>
+        <p>NTC - LM3 :: Exercício para explorar a utilização de funções</p>
+    </div>
+
+    <div class="col-sm-12 block-item">
+        <div class="form-group">
+            <div class="col-sm-12"><label>Validar se é um número</label></div>
+            <div class="col-sm-12 field-item">
+                <input placeholder="Insira um Número" class="form-control" type="text" id="txtBox1">
+            </div>
+            <div class="col-sm-1 field-item">
+                <button class="btn btn-primary" id='validar'>Validar</button>
+            </div>
+
+            <div class="col-sm-8 msg-area" id="msg_num"></div>
+        </div>
+    </div>
+
+    <div class="col-sm-12 block-item">
+        <div class="form-group">
+            <div class="col-sm-12"><label>Validar se é um número inteiro</label></div>
+            <div class="col-sm-12 field-item">
+                <input placeholder="Insira um Número Inteiro" class="form-control" type="text" id="txtBox2">
+            </div>
+            <div class="col-sm-1 field-item">
+                <button class="btn btn-primary" id='validarInteiro'>Validar</button>
+            </div>
+
+            <div class="col-sm-8 msg-area" id="msg_int"></div>
+        </div>
+    </div>
+
+    <div class="col-sm-12 block-item">
+        <div class="form-group">
+            <div class="col-sm-12"><label>Validar se é um número inteiro positivo</label></div>
+            <div class="col-sm-12 field-item">
+                <input placeholder="Insira Número Inteiro Positivo" class="form-control" type="text" id="txtBox3">
+            </div>
+            <div class="col-sm-1 field-item">
+                <button class="btn btn-primary" id='validarInteiroPositivo'>Validar</button>
+            </div>
+            <div class="col-sm-8 msg-area" id="msg_int_pos"></div>
+        </div>
+    </div>
+
+    <div class="col-sm-12 block-item">
+        <div class="form-group">
+            <div class="col-sm-12"><label>Validar se é número inteiro positivo e par</label></div>
+            <div class="col-sm-12 field-item">
+                <input placeholder="Insira Número Inteiro Positivo e Par" class="form-control" type="text" id="txtBox4">
+            </div>
+            <div class="col-sm-1 field-item">
+                <button class="btn btn-primary" id='validarInteiroPositivoPar'>Validar</button>
+            </div>
+            <div class="col-sm-8 msg-area" id="msg_int_pos_par"></div>
+        </div>
+    </div>
+
+    <!--<div class="col-sm-12 block-item">
+        <div class="form-group">
+            <div class="col-sm-12"><label>Calcular fatorial</label></div>
+            <div class="col-sm-12 field-item">
+                <input placeholder="Insira Número Inteiro Positivo" type="text" class="form-control" id="txtBox5">
+            </div>
+            <div class="col-sm-1 field-item">
+                <button class="btn btn-primary" id='calcularFatorial'>Calcular</button>
+            </div>
+            <div class="col-sm-8 msg-area" id="msg_fatorial"></div>
+        </div>
+    </div>-->
+
+    <div class="col-sm-12 block-item">
+        <div class="form-group">
+            <div class="col-sm-12"><label>Verificar se número inteiro pertence a um intervalo</label></div>
+            <div class="col-sm-2">Intervalo:</div>
+            <div class="col-sm-5 field-item">
+                <input placeholder="de" type="text" class="form-control" id="txtBox7">
+            </div>
+            <div class="col-sm-5 field-item">
+                <input placeholder="até" type="text" class="form-control" id="txtBox8">
+            </div>
+            <div class="col-sm-12 field-item">
+                <input placeholder="número" type="text" class="form-control" id="txtBox9">
+            </div>
+            <div class="col-sm-1 field-item">
+                <button class="btn btn-primary" id='verificarPertenceIntervalo'>Verificar</button>
+            </div>
+            <div class="col-sm-8 msg-area" id="msg_pertence"></div>
+        </div>
+    </div>
+
+    <div class="col-sm-12 block-item">
+        <div class="form-group">
+            <div class="col-sm-12"><label>Verificar se os números são múltiplos</label></div>
+            <div class="col-sm-12 field-item">
+                <input placeholder="número 1" type="text" class="form-control" id="txtBox10">
+            </div>
+            <div class="col-sm-12 field-item">
+                <input placeholder="número 2" type="text" class="form-control" id="txtBox11">
+            </div>
+            <div class="col-sm-1 field-item">
+                <button class="btn btn-primary" id='verificarMultiplo'>Verificar</button>
+            </div>
+            <div class="col-sm-8 msg-area" id="msg_mul"></div>
+        </div>
+    </div>
+
+    <div class="col-sm-12 block-item">
+        <div class="form-group">
+            <div class="col-sm-12"><label>Verificar qual o número menor</label></div>
+            <div class="col-sm-6 field-item">
+                <input placeholder="insira número inteiro positivo" type="text" class="form-control" id="txtBox12">
+            </div>
+            <div class="col-sm-6 field-item">
+                <input placeholder="insira número inteiro positivo" type="text" class="form-control" id="txtBox13">
+            </div>
+            <div class="col-sm-12 field-item">
+                <button class="btn btn-primary" id='verificarMin'>Verificar</button>
+            </div>
+
+            <div class="col-sm-8 msg-area" id="msg_min"></div>
+        </div>
+    </div>
+
+
+</div>
+</body>
+</html>

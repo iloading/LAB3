@@ -1,0 +1,33 @@
+.block-item {
+    margin-bottom: 30px;
+}
+
+.msg-area{
+    height: 15px;
+}
+
+.field-item {
+    margin-bottom: 4px;
+}
+
+.img{
+    color: #ffffff;
+    background-image: url(../imagens/header.png);
+    height: 120px;
+    padding: 5px 15px;
+}
+
+
+#conteudo {
+  width: 800px;
+  height: 800px;
+  position: relative;
+  background: blue;
+}
+#anima {
+ background-image: url(../imagens/fcp1.png);
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  background-color: white;
+}
