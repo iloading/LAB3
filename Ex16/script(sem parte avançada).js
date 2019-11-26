@@ -1,5 +1,5 @@
 //declaração de variáveis
-//ATENÇÃO MUDAR NA PÁG CSS estilo.css e no ficheiro HTML o id da divAjuda para div_ajuda
+//ATENÇÃO verificar e MUDAR NA PÁG CSS estilo.css e no ficheiro HTML o id da divAjuda para div_ajuda, o prof já atualizou no elearning mas quem fez download na aula da manhã provavelmente tem os id's mal
 
 var ajudaON = true//5.3
 var lampadasAcesas
