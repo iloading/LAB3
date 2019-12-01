@@ -1,0 +1,59 @@
+body {
+    background-color: #000000;
+    font-family: arial, sans-serif;
+}
+
+#eggs {
+    margin: auto;
+    width: calc(28px * 20);
+    background-image: url(imgs/ovo.png);
+}
+
+#intro {
+    float: left;
+    margin: auto;
+    margin-left: calc(28px * 1);
+    width: 220px;
+    height: 353px;
+    text-align: center;
+    background-color: #999999;
+}
+
+#div_ajuda {
+    height: 353px;
+    width: calc(28px * 9.2);
+    float: left;
+    background-color: rgba(152, 152, 152, 1);
+    margin: 0;
+    padding: 0;
+    padding-left: calc(28px * 1);
+    z-index: 101;
+}
+
+#div_ajuda span {
+    font-weight: bold;
+}
+
+#niveis {
+    clear: both;
+    width: calc(28px * 17);
+    background-color: black;
+    margin-left: calc(28px * 1);
+    padding-left: calc(28px * 1);
+}
+
+ul {
+    padding: 0;
+    padding-top: calc(28px * 1);
+    list-style: none;
+}
+
+li {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 30px;
+    padding-bottom: 18px;
+}
+
+a {
+    color: #FFFFFF;
+}

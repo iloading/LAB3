@@ -1,0 +1,114 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+    background-color: #000000;
+    font-family: arial, sans-serif;
+}
+
+.roundbox {
+    height: 400px;
+    width: 530px;
+    margin: 5% auto;
+    background-color: #78B73B;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+.content span {
+    font-weight: bold;
+}
+
+#div_ajuda {
+    background-color: #666666;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 101;
+    height: 100%;
+    width: 100%;
+
+    /* Required for IE 5, 6, 7 */
+    /* ...or something to trigger hasLayout, like zoom: 1; */
+
+    /* http://css-tricks.com/64-css-transparency-settings-for-all-broswers/ */
+    /* Theoretically for IE 8 & 9 (more valid) */
+    /* ...but not required as filter works too */
+    /* should come BEFORE filter */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=95)";
+
+    /* This works in IE 8 & 9 too */
+    /* ... but also 5, 6, 7 */
+    filter: alpha(opacity=95);
+
+    /* Older than Firefox 0.9 */
+    -moz-opacity: 0.95;
+
+    /* Safari 1.x (pre WebKit!) */
+    -khtml-opacity: 0.95;
+    /* Modern!
+                /* Firefox 0.9+, Safari 2?, Chrome any?
+                /* Opera 9+, IE 9+ */
+    opacity: 0.95;
+}
+
+img {
+    position: absolute;
+}
+
+#jogador {
+    z-index: 100;
+}
+
+#plataforma1, #plataforma2 {
+    position: absolute;
+    height: 12px;
+    width: 750px;
+    left: 0;
+    background-image: url("imagens/plataforma.png");
+    z-index: -1;
+    top: 150px;
+}
+
+#plataforma1 {
+    top: 300px;
+}
+
+#escada1 {
+    top: 150px;
+    left: 550px;
+}
+
+#contador_block {
+    position: absolute;
+    top: 30px;
+    left: 730px;
+    width: 100px;
+    height: 20px;
+}
+
+#txt_ovos, #txt_tempo {
+    position: absolute;
+    width: 40px;
+    height: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    color: #FFFF33;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+#txt_ovos {
+    top: -15px;
+    left: 35px;
+}
+
+#txt_tempo {
+    border: #FFFF33 dashed 3px;
+    top: 15px;
+    left: 670px;
+}
