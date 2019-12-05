@@ -6,7 +6,7 @@ var tecla
 window.onload = function() {
   carrega_elementos()
   escolha_carro()
-  adicionaElementos()
+  //adicionaElementos()
 }
 
 //3
@@ -26,16 +26,17 @@ function carrega_elementos() {
   for (let i = 1; i <=10; i++) {
     document.getElementById('personagens').innerHTML += "<img src='assets/imagens/carro" + i + ".png' id='carro" + i + "'>"
     }
+
   }//fecho da função carrega_elementos()
 
   //1.2
   function escolha_carro() {
     for (let n_carro = 1; n_carro <= 10; n_carro++) {
       document.getElementById('carro'+n_carro).onclick = function() {
-        console.log(n_carro);
+        carroE = this.id;
         //1.3
         clock = 30 // reset do clock sempre que se clica para jogar outra vez
-        jogar(n_carro)
+        jogar(carroE)
         tempo() //4
       }
     }
@@ -45,7 +46,7 @@ function carrega_elementos() {
   //2
   function jogar(n_carro) {
     document.getElementById('tempo_txt').innerHTML = clock
-    let carroEscolhido = "<img src='assets/imagens/carro" + n_carro + ".png' id='carro_escolhido'>"
+    let carroEscolhido = "<img src='assets/imagens/"+ n_carro + ".png' id='carro_escolhido'>"
     //2.1
     document.getElementById('personagens').style.display = 'none'
     //2.2
