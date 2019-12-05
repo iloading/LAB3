@@ -31,7 +31,7 @@ function carrega_elementos() {
 
   //1.2
   function escolha_carro() {
-
+//RESOLVIDO SEM O THIS ESCOLHAM APENAS UM DELES
     for (let num_carro = 1; num_carro <= 10; num_carro++) {
         document.getElementById('carro'+num_carro).onclick = function() {
 
@@ -41,8 +41,8 @@ function carrega_elementos() {
         }
     }
 
-}
-    /*for (let n_carro = 1; n_carro <= 10; n_carro++) {
+//RESOLVIDO COM O THIS ESCOLHAM APENAS UM DELES
+    for (let n_carro = 1; n_carro <= 10; n_carro++) {
       document.getElementById('carro'+n_carro).onclick = function() {
         carroE = this.id;
         //1.3
@@ -50,10 +50,10 @@ function carrega_elementos() {
         jogar(carroE)
         tempo() //4
       }
-    */
 
+    }
 
-  //fecho da função escolha_carro()
+  }//fecho da função escolha_carro()
 
   //2
   function jogar(n_carro) {
@@ -121,7 +121,7 @@ function tempo() {
       document.getElementById('personagens').style.display = 'block'
       document.getElementById('pista').innerHTML = '' //se usar display none , ao reiniciar vamos ficar com duas pistas e dois carros
     }
-  },100)
+  },1000)
 }
 
 //PARTE 4 7.2 POR FAZER
