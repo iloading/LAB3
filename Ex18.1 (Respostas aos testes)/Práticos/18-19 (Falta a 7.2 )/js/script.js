@@ -31,7 +31,18 @@ function carrega_elementos() {
 
   //1.2
   function escolha_carro() {
-    for (let n_carro = 1; n_carro <= 10; n_carro++) {
+
+    for (let num_carro = 1; num_carro <= 10; num_carro++) {
+        document.getElementById('carro'+num_carro).onclick = function() {
+
+            jogar(num_carro)
+            tempo();
+
+        }
+    }
+
+}
+    /*for (let n_carro = 1; n_carro <= 10; n_carro++) {
       document.getElementById('carro'+n_carro).onclick = function() {
         carroE = this.id;
         //1.3
@@ -39,14 +50,16 @@ function carrega_elementos() {
         jogar(carroE)
         tempo() //4
       }
-    }
+    */
 
-  }//fecho da função escolha_carro()
+
+  //fecho da função escolha_carro()
 
   //2
   function jogar(n_carro) {
+    clock = 30
     document.getElementById('tempo_txt').innerHTML = clock
-    let carroEscolhido = "<img src='assets/imagens/"+ n_carro + ".png' id='carro_escolhido'>"
+    let carroEscolhido = "<img src='assets/imagens/carro"+ n_carro + ".png' id='carro_escolhido'>"
     //2.1
     document.getElementById('personagens').style.display = 'none'
     //2.2
@@ -108,10 +121,10 @@ function tempo() {
       document.getElementById('personagens').style.display = 'block'
       document.getElementById('pista').innerHTML = '' //se usar display none , ao reiniciar vamos ficar com duas pistas e dois carros
     }
-  },1000)
+  },100)
 }
 
-/* PARTE 4 7.2 POR FAZER
+//PARTE 4 7.2 POR FAZER
 function adicionaElementos() {
   wMax = parseInt(document.getElementById('jogo').width)
   hMax =  parseInt(document.getElementById('jogo').height)
@@ -131,4 +144,3 @@ function adicionaElementos() {
 
   }
 }
-*/
